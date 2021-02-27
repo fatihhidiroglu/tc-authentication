@@ -56,7 +56,7 @@
             echo "<div class='success'>TC Kimlik Numarası Doğrudur</div>";
           } else {
             echo "<span><span style='color: #EC384B;font-weight: 600;margin-right: 5px;'>TC NO:</span>".$tcNo."</span>";
-            echo "<div class='error'>TC Kimlik Numarası Standart Dışıdır</div>";
+            echo "<div class='error'>TC Kimlik Numarası Hatalıdır</div>";
           }
         ?>
       </div>
