@@ -4,4 +4,4 @@ There is an invaluable Easter Eggs &#128526;
 
 [TC Authentication] Demo Page
 
-[TC Authentication]: kimlik.fatihhidiroglu.com
+[TC Authentication]: https://kimlik.fatihhidiroglu.com
