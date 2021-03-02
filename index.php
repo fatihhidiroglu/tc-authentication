@@ -40,7 +40,8 @@
     <div class="check">
       <button class="refresh" onclick="redirect()" title="Yenile"></button>
       <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-        <input type="number" onKeyPress="if (this.value.length == 11) return false;" min="10000000000" name="tcNo" placeHolder="TC Kimlik Numarası">
+        <input type="number" onKeyDown="return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key));" 
+          onKeyPress="if (this.value.length == 11) return false;" min="10000000000" name="tcNo" placeHolder="TC Kimlik Numarası">
         <button class="submit" type="submit">TC Kimlik Sorgula</button>
       </form>
       <div class="output">
