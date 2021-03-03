@@ -48,11 +48,11 @@
         <?php
           if (empty($_REQUEST['tcNo'])) {
             echo 'TC Kimlik Numarası Giriniz';
-          } else if (($tenDigit == $tcArr[9] && $lastDigit == $tcArr[10]) && $tcNo == '10000000146') {
+          } else if ((is_int($tenDigit == $tcArr[9] && $lastDigit == $tcArr[10])) && $tcNo == '10000000146') {
             echo "<audio controls autoplay hidden><source src='assets/march.mp3' type='audio/mpeg'></audio>";
             echo "<span><span style='color: #EC384B;font-weight: 600;margin-right: 5px;'>TC NO:</span>".$tcNo."</span>";
             echo "<div class='success'>YAŞA MUSTAFA KEMAL PAŞA YAŞAAA</div>";
-          } else if ($tenDigit == $tcArr[9] && $lastDigit == $tcArr[10]) {
+          } else if (is_int($tenDigit == $tcArr[9] && $lastDigit == $tcArr[10])) {
             echo "<span><span style='color: #EC384B;font-weight: 600;margin-right: 5px;'>TC NO:</span>".$tcNo."</span>";
             echo "<div class='success'>TC Kimlik Numarası Doğrudur</div>";
           } else {
